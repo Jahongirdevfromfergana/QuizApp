@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:layout_height="match_parent"
+    tools:context=".screen.QuizActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+            <ImageView
+                android:id="@+id/imgBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="8dp"
+                android:src="@drawable/ic_left_chevron"/>
+
+            <TextView
+                android:id="@+id/tvQuizPage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Quiz Page"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+        </FrameLayout>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            app:cardCornerRadius="8dp"
+            app:contentPadding="8dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardElevation="4dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/tvQuiz"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:text="Quiz text lorem ipsun"/>
+                <ImageView
+                    android:id="@+id/imgQuiz"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:layout_margin="8dp"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/img1"
+                    android:scaleType="centerCrop"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            app:cornerRadius="16dp"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"
+            android:text="lanshaft"/>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            app:cornerRadius="16dp"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"
+            android:text="Forest"/>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            app:cornerRadius="16dp"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"
+            android:text="Sun"/>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            app:cornerRadius="16dp"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"
+            android:text="Mons"/>
+
+
+
+
+    </LinearLayout>
+
+</FrameLayout>

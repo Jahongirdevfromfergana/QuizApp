@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:layout_height="match_parent"
+    tools:context=".screen.MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="24dp"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_free_icon_solution_4674851"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textColor="#fff"
+            android:paddingTop="24dp"
+            android:textSize="16sp"
+            android:text="Flutter Quiz App"/>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnStart"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:backgroundTint="@color/colorAccept"
+            app:cornerRadius="24dp"
+            android:text="PLAY"
+            android:layout_marginTop="24dp"/>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSciences"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            app:cornerRadius="24dp"
+            android:text="TOPICS"
+            android:layout_marginTop="24dp"
+            app:strokeColor="@color/colorAccept"
+            android:textColor="@color/colorAccept"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:gravity="center"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:drawableLeft="@drawable/ic_baseline_share_24"
+                android:textSize="16sp"
+                android:text="Share"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:layout_marginLeft="100dp"
+                android:textColor="@color/white"
+                android:drawableLeft="@drawable/ic_baseline_star_24"
+                android:textSize="16sp"
+                android:text="Rate Us"/>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>
